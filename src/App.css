@@ -1,38 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.left {
+  background: rgb(85,28,99);
+  background: linear-gradient(185deg, rgba(85,28,99,1) 24%, rgba(54,47,116,1) 56%, rgba(23,13,55,1) 96%);
+  position: absolute;
+  width: 483px;
+  height: 900px;
+  left: 0;
+  top: 0;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.right {
+  position: absolute;
+  width: 387px;
+  height: 352px;
+  left: 826px;
+  top: 275px;
+}
+.front {
+  position: absolute;
+  width: 447px;
+  height: 245px;
+  left: 164px;
+  top: 187px;
+  background: red;
+  border-radius: 10px;
+}
+.back {
+  position: absolute;
+  width: 447px;
+  height: 245px;
+  left: 258px;
+  top: 469px;
+  background: #DFDEE0;
+  border-radius: 10px;
+}
+.form-label {
+  font-family: 'Space Grotesk';
+  font-style: normal;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #21092F;
+}
+.btn {
+  width: 381px;
+  height: 53px;
+  margin-top: 30px;
+  border-radius: 10px;
+  background: #21092F;
+  border: 1px solid #21092F;
+  font-family: 'Space Grotesk';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+}
+.btn:hover {
+  background: #21092F;
+}
+.month, .year {
+  height: 45px;
+  width: 80px;
+  margin-right: 10px;
+  border-radius: 10px;
+}
+.cvv2 {
+  height: 45px;
+  width: 191px;
+  border-radius: 10px;
+}
+.MM {
+  margin-right: 10px;
+}
+.CVV {
+  margin-left: 40px;
+}
+.right p {
+  font-size: 15px;
+  color: #FF5050;
+}
+.form-control:focus {
+  border: 1px solid #6348FE;
+}
+.circle {
+  height: 47px;
+  width: 47px;
+  position: absolute;
+  left: 7.16%;
+  right: 82.34%;
+  top: 11.43%;
+  bottom: 69.39%;
+  border-radius: 50%;
+  background: #FFFFFF;
+}
+.small-circle {
+  height: 21px;
+  width: 21px;
+  border: 1px solid #FFFFFF;
+  border-radius: 50%;
+  background: transparent;
+  position: absolute;
+  left: 21.22%;
+  right: 74.05%;
+  top: 16.7%;
+  bottom: 74.66%;
+}
+.front h3 {
+  position: absolute;
+  height: 36px;
+  left: 7.16%;
+  right: 17%;
+  top: calc(50% - 36px/2 + 34.5px);
+  font-family: 'Space Grotesk';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 36px;
+  letter-spacing: 3px;
+  color: #FFFFFF;
+}
+.front h5 {
+  position: absolute;
+  height: 18px;
+  left: 8%;
+  top: 80%;
+  font-family: 'Space Grotesk';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.front h6 {
+  position: absolute;
+  height: 18px;
+  right: 8%;
+  top: 80%;
+  font-family: 'Space Grotesk';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: right;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.black {
+  position: absolute;
+  width: 447px;
+  height: 54px;
+  left: 0;
+  top: 20px;
+  background: #2F2F2F;
+}
+.line {
+  position: absolute;
+  width: 361px;
+  height: 38px;
+  left: 40px;
+  top: 100px;
+  background: #ADB5BE;
+  border-radius: 4px;
+}
+.line h6 {
+  position: absolute;
+  height: 18px;
+  left: 86.7%;
+  right: 4.43%;
+  top: calc(50% - 18px/2);
+  font-family: 'Space Grotesk';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: right;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+@media (max-width: 767px) {
+  .left {
+    width: 375px;
+    height: 240px;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .back {
+    width: 286px;
+    height: 157px;
+    left: 73px;
+    top: 32px;
   }
-  to {
-    transform: rotate(360deg);
+  .black {
+    width: 286px;
+    height: 34px;
+    left: 0;
+    top: 15px;
+  }
+  .line {
+    width: 230px;
+    height: 29px;
+    left: 28px;
+    top: 65px;
+  }
+  .line h6 {
+    font-size: 9px;
+  }
+  .front {
+    width: 286px;
+    height: 157px;
+    left: 16px;
+    top: 126px;
+    z-index: 5;
+  }
+  .circle {
+    height: 30px;
+    width: 30px;
+  }
+  .small-circle {
+    height: 13px;
+    width: 13px;
+  }
+  .front h3 {
+    font-size: 15px;
+  }
+  .front h5 {
+    font-size: 9px;
+  }
+  .front h6 {
+    font-size: 9px;
+  }
+  .right {
+    width: 327px;
+    height: 328px;
+    left: 24px;
+    top: 331px;
+  }
+  .form-control {
+    height: 45px;
+    width: 327px;
+  }
+  .month, .year {
+    height: 45px;
+    width: 72px;
+  }
+  .cvv2 {
+    height: 45px;
+    width: 164px;
+  }
+  .btn {
+    height: 53px;
+    width: 327px;
   }
 }
